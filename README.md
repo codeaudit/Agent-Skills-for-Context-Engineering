@@ -144,9 +144,21 @@ Option B - Direct install via command:
 
 <img width="1014" height="894" alt="Screenshot 2025-12-26 at 12 34 47 PM" src="https://github.com/user-attachments/assets/f79aaf03-fd2d-4c71-a630-7027adeb9bfe" />
 
-### For Cursor & Codex & IDE
+### For Cursor (Open Plugins)
 
-Copy skill content into `.rules` or create project-specific Skills folders. The skills provide the context and guidelines that agent needs for effective context engineering and agent design.
+This repository is listed on the [Cursor Plugin Directory](https://cursor.directory/plugins/context-engineering). Install directly:
+
+```
+cursor-cli plugin install muratcankoylan/Agent-Skills-for-Context-Engineering
+```
+
+Or load locally during development:
+
+```
+cursor --plugin-dir ./Agent-Skills-for-Context-Engineering
+```
+
+The `.plugin/plugin.json` manifest follows the [Open Plugins](https://open-plugins.com) standard, so the repo also works with any conformant agent tool (Codex, GitHub Copilot, etc.).
 
 ### For Custom Implementations
 
